@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encuesta de productos deportivos</title>
+</head>
+<body>
+    <h1>encuesta sobre productos deportivos</h1>
+    <form action="tratar_form.php" method="get" enctype="multipart/form-data">
+        <p>
+            <label for="nombre">apellido y nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Nicolas Ruiz" required>
+        </p>
+        <p>
+            <label for="email">email:</label><br>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+        </p>
+        <p>
+            ¿desea recibir informacion por email?<br>
+            <input type="radio" id="si" name="boletin" value="si" checked>
+            <label for="si">si</label>
+            <input type="radio" id="no" name="boletin" value="no">
+            <label for="no">no</label>
+        </p>
+
+        <p>
+            deportes de interes (puede elegir varios): <br>
+            <input type="checkbox" id="futbol" name="deportes[]" value="futbol">
+            <label for="futbol">futbol</label><br>
+            <input type="checkbox" id="basquet" name="basquet[]" value="basquet">
+            <label for="basquet">basquet</label><br>
+            <input type="checkbox" id="tenis" name="tenis[]" value="tenis">
+            <label for="tenis">tenis</label><br>
+            <input type="checkbox" id="natacion" name="natacion[]" value="natacion">
+            <label for="natacion">natacion</label><br>
+            <input type="checkbox" id="voley" name="voley[]" value="voley">
+            <label for="voley">voley</label><br>
+        </p>
+        <p>
+            ¿cuanto le gusta el sitio? (0:nada - 10:mucho):<br>
+            <input type="range" id="gusto" name="valoracion" min="0" max="10" step="1" value="5">
+        </p>
+        <p>
+            <label for="color">color para la proxima temporada:</label><br>
+            <input type="color" id="color" name="color_prenda" value="#ff0000">
+        </p>
+        <p>
+            <label for="fecha">fecha actual</label><br>
+            <input type="date" id="fecha" name="fecha_encuesta" required>
+        </p>
+        <p>
+            <label for="tel">numero de telefono:</label><br>
+            <input type="tel" id="tel" name="telefono" placeholder="Ej: 2657717113" pattern="[0-9]{10}">
+        </p>
+        <p>
+            horario de contacto:<br>
+            desde: <input type="time" name="hora_desde">
+            hasta: <input type="time" name="hora:hasta">
+        </p>
+        <p>
+            <label for="archivo">adjunto un modelo de prenda (imagen):</label><br>
+            <input type="file" id="archivo" name="modelo_prenda" accept="image/*">
+        </p>
+        <p>
+            <button type="submit">enviar encuesta</button>
+            <button type="reset">limpiar formulario</button>
+        </p>
+
+
+
+    </form>
+</body>
+</html>

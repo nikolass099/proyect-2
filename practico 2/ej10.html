@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro en red social</title>
+</head>
+<body>
+    <h1>formulario de registro</h1>
+    <form action="registro.php" method="post">
+        <p>
+            <label for="nombre_apellido">apellido y nombre:</label><br>
+            <input type="text" name="nombre_apellido" id="nombre_apellido" required placeholder="Ej: Nicolas Ruiz">
+        </p>
+        <p>
+            <label for="dni">DNI (solo numeros):</label><br>
+            <input type="number" id="dni" name="dni" required min="1" placeholder="Ej: 12345678">
+        </p>
+        <p>
+            <label for="pais">pais de origen:</label><br>
+            <select id="pais" name="pais">
+                <option value="argentina">argentina</option>
+                <option value="albania">albania</option>
+                <option value="alemania">alemania</option>
+                <option value="afganistan">afganistan</option>
+                <option value="bolivia">bolivia</option>
+                <option value="brasil">brasil</option>
+                <option value="chile">chile</option>
+                <option value="paraguay">paraguay</option>
+                <option value="uruguay">uruguay</option>
+            </select>
+        </p>
+        <p>
+            <button type="submit">registrarse</button>
+        </p>
+    </form>
+    
+</body>
+</html>

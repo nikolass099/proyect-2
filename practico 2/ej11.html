@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>envio de poemas</title>
+</head>
+
+<body>
+    <h1>publica tu poema</h1>
+    <form action="http://poemas.com/recepcion.php" method="post">
+        <p>
+            <label for="autor">seudonimo del autor:</label><br>
+            <input type="text" id="autor" name="pseudonimo" placeholder="tu nombre artistico" required>
+        </p>
+        <p>
+            <label for="poema">escribe tu poema aqui:</label><br>
+            <textarea id="poema" name="texto_poema" rows="10" cols="50" placeholder="escribe los versos aqui. . ." required></textarea>
+        </p>
+        <p>
+            <button type="submit">enviar poema</button>
+        </p>
+    </form>
+</body>
+
+</html>
